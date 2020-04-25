@@ -1,8 +1,9 @@
 
-## [delete-file.lua](delete-file.lua)
+# [delete-file.lua](delete-file.lua)
+Deletes the currently playing video file with a shortcut key
 ### Installation
 1. Copy [delete-file.lua](delete-file.lua) to your mpv scripts directory
-2. Add the following line to **input.conf** or replace the command if it already exists.
+2. Add the following line to **input.conf** or replace the command if it already exists
 ```
 DEL script_message delete-file
 ```
