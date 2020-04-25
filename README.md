@@ -1,5 +1,5 @@
 
-# *[delete-file.lua](delete-file.lua)
+* # [delete-file.lua](delete-file.lua)
 ### Installation
 1. Copy [delete-file.lua](delete-file.lua) to your mpv scripts directory
 2. Add the following line to **input.conf** or replace the command if it already exists.
