@@ -1,5 +1,6 @@
 
-# delete-file.lua
+# mpv-scripts
+## [delete-file.lua](delete-file.lua)
 This script deletes the currently playing video file.
 ### Installation
 1. Copy [delete-file.lua](delete-file.lua) to your mpv scripts directory.
