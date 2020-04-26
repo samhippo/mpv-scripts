@@ -1,6 +1,6 @@
 
 # mpv-scripts
-# :one: delete-file.lua
+## :one: delete-file.lua
 Deletes the currently playing video file.
 ### Installation
 1. Copy [delete-file.lua](delete-file.lua) to your mpv scripts directory.
@@ -14,7 +14,7 @@ Press the Delete key while playing a video file. The file will be deleted and re
 * Works with Unicode characters
 * Works with relative paths (files inside sub folders)
 
-# :two: move-file.lua
+## :two: move-file.lua
 Moves the currently playing video file to a specified folder.
 ### Installation
 1. Copy [move-file.lua](move-file.lua) to your mpv scripts directory.
