@@ -1,5 +1,7 @@
 
 # mpv-scripts
+## Table of Contents
+
 ##  ▶️  &nbsp; delete-file.lua
 Deletes the currently playing video file.
 #### Installation
