@@ -18,7 +18,8 @@ Press the Delete key while playing a video file. The file will be deleted and re
 Moves the currently playing video file to a specified folder.
 #### Installation
 1. Copy [move-file.lua](move-file.lua) to your mpv scripts directory.
-2. Add the following line to **input.conf**. Update *"C:\\\Folder1"* as needed.
+2. Add the following line to **input.conf**.
+3. Edit *"C:\\\Folder1"* as needed.
 ```
 Ctrl+1 script_message move-file "C:\\Folder1"
 ```
@@ -42,6 +43,7 @@ Moves the currently playing video file to a specified subfolder.
 #### Installation
 1. Copy [move-file-subfolder.lua](move-file-subfolder.lua) to your mpv scripts directory.
 2. Add the following line to **input.conf**.
+3. Edit *"Subfolder1"* as needed.
 ```
 Ctrl+3 script_message move-file-subfolder "Subfolder1"
 ```
