@@ -27,3 +27,13 @@ Press ```Ctrl+1``` while playing a video file. The file will be moved to the spe
 * Tested with Windows 10 only
 * Works with Unicode characters
 * Works with relative paths (files inside sub folders)  
+## ▶️  &nbsp; move-file-datetime.lua
+Moves the currently playing video file to a timestamped subfolder.
+#### Installation
+1. Copy [move-file-datetime.lua](move-file-datetime.lua) to your mpv scripts directory.
+2. Add the following line to **input.conf**.
+```
+Ctrl+2 script_message move-file-datetime
+```
+#### Usage
+Press ```Ctrl+2``` while playing a video file. The file will be moved to a timestamped subfolder e.g. *\20200425203645\video.mkv*. The timestamp remains until mpv is closed and reopened. If no other items exist in the playlist then mpv auto closes by default.
