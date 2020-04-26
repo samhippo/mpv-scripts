@@ -24,7 +24,7 @@ This script moves the currently playing video file.
 Ctrl+m script_message move-file "C:\\Folder1"
 ```
 ### Usage
-Press the ```Ctrl+m``` key when playing a video file. The file will be moved to the specified destination folder and removed from the active playlist. If no playlist exists then the default behavior is for mpv to exit.
+Press ```Ctrl+m``` when playing a video file. The file will be moved to the specified destination folder and removed from the active playlist. If no playlist exists then the default behavior is for mpv to exit.
 ### Notes
 * Tested with Windows 10 only
 * Works with Unicode Characters
