@@ -14,15 +14,15 @@ Press the Delete key while playing a video file. The file will be deleted and re
 * Works with Unicode characters
 * Works with relative paths (files inside sub folders)
 
-## :two: &nbsp; move-file.lua
+## ▶️  &nbsp; move-file.lua
 Moves the currently playing video file to a specified folder.
-### Installation
+#### Installation
 1. Copy [move-file.lua](move-file.lua) to your mpv scripts directory.
 2. Add the following line to **input.conf**. Update *"C:\\\Folder1"* as needed.
 ```
 Ctrl+1 script_message move-file "C:\\Folder1"
 ```
-### Usage
+#### Usage
 Press ```Ctrl+1``` while playing a video file. The file will be moved to the specified folder (if the folder doesn't exist then it will be created). It will also remove the file from the active playlist. If no playlist is active then the default behavior is for mpv to exit.
 * Tested with Windows 10 only
 * Works with Unicode characters
