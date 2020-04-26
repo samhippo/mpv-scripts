@@ -21,10 +21,10 @@ This script moves the currently playing video file.
 1. Copy [move-file.lua](move-file.lua) to your mpv scripts directory.
 2. Add the following line to **input.conf** or replace the command if it already exists. *"C:\\Folder1"* is the destination folder.
 ```
-Ctrl+m script_message move-file "C:\\Folder1"
+Ctrl+1 script_message move-file "C:\\Folder1"
 ```
 ### Usage
-Press ```Ctrl+m``` when playing a video file. The file will be moved to the specified folder and removed from the playlist. If no playlist is active then the default behavior is for mpv to exit.
+Press ```Ctrl+1``` when playing a video file. The file will be moved to the specified folder and removed from the playlist. If no playlist is active then the default behavior is for mpv to exit.
 #### Notes
 * Tested with Windows 10 only
 * Works with Unicode Characters
