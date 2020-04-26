@@ -1,8 +1,11 @@
 
 # mpv-scripts
 ## Table of Contents
-* [delete-file.lua](https://github.com/samhippo/mpv-scripts/blob/master/README.md#%EF%B8%8F---delete-filelua)
-* [move-file.lua](https://github.com/samhippo/mpv-scripts/blob/master/README.md#%EF%B8%8F---move-filelua)
+* [delete-file.lua](#%EF%B8%8F---delete-filelua)
+* [move-file.lua](#%EF%B8%8F---move-filelua)
+* [move-file-datetime.lua](#%EF%B8%8F---move-file-datetimelua)
+* [move-file-subfolder.lua](#%EF%B8%8F---move-file-subfolderlua)
+* [cut-video.lua](#%EF%B8%8F---cut-videolua)
 ##  ▶️  &nbsp; delete-file.lua
 Deletes the currently playing video file.
 #### Installation
