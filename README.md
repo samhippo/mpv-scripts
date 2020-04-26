@@ -9,7 +9,7 @@ This script deletes the currently playing video file.
 DEL script_message delete-file
 ```
 ### Usage
-Press the Delete key when playing a video file. The file will be deleted and removed from the active playlist. If no playlist is active then default behavior is for mpv to exit.
+Press the Delete key when playing a video file. The file will be deleted and removed from the playlist. If no playlist is active then default behavior is for mpv to exit.
 ### Notes
 * Tested with Windows 10 only
 * Works with Unicode Characters
@@ -24,7 +24,7 @@ This script moves the currently playing video file.
 Ctrl+m script_message move-file "C:\\Folder1"
 ```
 ### Usage
-Press ```Ctrl+m``` when playing a video file. The file will be moved to the specified folder and removed from the active playlist. If no playlist is active then the default behavior is for mpv to exit.
+Press ```Ctrl+m``` when playing a video file. The file will be moved to the specified folder and removed from the playlist. If no playlist is active then the default behavior is for mpv to exit.
 #### Notes
 * Tested with Windows 10 only
 * Works with Unicode Characters
