@@ -49,4 +49,16 @@ Ctrl+3 script_message move-file-subfolder "Subfolder1"
 3. Edit ```"Subfolder1"``` as needed.
 #### Usage
 Press ```Ctrl+3``` while playing a video file. The file will be moved to the subfolder (*.\Subfolder1\video.mkv*). If no other items exist in the playlist then mpv auto closes by default.
-
+## ▶️  &nbsp; cut-video.lua
+Uses ffmpeg to cut sections of the currently playing video. No encoding is done to the video.
+#### Installation
+1. Copy [cut-video.lua](cut-video.lua) to your mpv scripts directory.
+2. [ffmpeg](https://www.ffmpeg.org/download.html) must either be copied to your mpv installation folder or added to your Windows Environment Variables (Path) so that it can be located by the script.
+3. Add the following text to **input.conf**
+```
+Ctrl+LEFT script_message cut-left
+Ctrl+RIGHT script_message cut-right
+Ctrl+ENTER script_message cut-finish
+```
+#### Usage
+```Ctrl+LEFT``` to set the start position, ```Ctrl+RIGHT``` to set the end position, and press ```Ctrl+ENTER``` to begin cutting that section of video to a new file. The new file is placed in the same directory as the original file.
