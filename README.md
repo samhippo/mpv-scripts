@@ -53,7 +53,7 @@ Press ```Ctrl+3``` while playing a video file. The file will be moved to the sub
 Uses ffmpeg to cut sections of the currently playing video. The file formats remain the same; no encoding is done to the video.
 #### Installation
 1. Copy [cut-video.lua](cut-video.lua) to your mpv scripts directory.
-2. [ffmpeg](https://www.ffmpeg.org/download.html) must either be copied to your mpv installation folder or added to your Windows Environment Variables (Path) so that it can be located by the script.
+2. [ffmpeg](https://www.ffmpeg.org/download.html) must either be added to your mpv installation folder or added to your Windows Environment Variables (Path) so that it can be located by the script.
 3. Add the following text to **input.conf**
 ```
 Ctrl+LEFT script_message cut-left
