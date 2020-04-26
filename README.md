@@ -36,7 +36,7 @@ Moves the currently playing video file to a timestamped subfolder.
 Ctrl+2 script_message move-file-datetime
 ```
 #### Usage
-Press ```Ctrl+2``` while playing a video file. The file will be moved to a timestamped subfolder e.g. *\20200425203645\video.mkv*. The timestamp remains until mpv is closed and reopened. If no other items exist in the playlist then mpv auto closes by default.
+Press ```Ctrl+2``` while playing a video file. The file will be moved to a timestamped subfolder e.g. *.\20200425203645\video.mkv*. The timestamp remains until mpv is closed and reopened. If no other items exist in the playlist then mpv auto closes by default.
 ## ▶️  &nbsp; move-file-subfolder.lua
 Moves the currently playing video file to a specified subfolder.
 #### Installation
@@ -46,5 +46,5 @@ Moves the currently playing video file to a specified subfolder.
 Ctrl+3 script_message move-file-subfolder "Subfolder1"
 ```
 #### Usage
-Press ```Ctrl+3``` while playing a video file. The file will be moved to the subfolder e.g. *\Subfolder1\video.mkv*. If no other items exist in the playlist then mpv auto closes by default.
+Press ```Ctrl+3``` while playing a video file. The file will be moved to the subfolder (*.\Subfolder1\video.mkv*). If no other items exist in the playlist then mpv auto closes by default.
 
