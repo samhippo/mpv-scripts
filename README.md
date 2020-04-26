@@ -22,7 +22,7 @@ Moves the currently playing video file to a specified folder.
 ```
 Ctrl+1 script_message move-file "C:\\Folder1"
 ```
-3. Edit *"C:\\\Folder1"* as needed.
+3. Edit ```"C:\\\Folder1"``` as needed.
 #### Usage
 Press ```Ctrl+1``` while playing a video file. The file will be moved to the specified folder (if the folder doesn't exist then it will be created). It will also remove the file from the active playlist. If no playlist is active then the default behavior is for mpv to exit.
 * Tested with Windows 10 only
@@ -46,7 +46,7 @@ Moves the currently playing video file to a specified subfolder.
 ```
 Ctrl+3 script_message move-file-subfolder "Subfolder1"
 ```
-3. Edit *"Subfolder1"* as needed.
+3. Edit ```"Subfolder1"``` as needed.
 #### Usage
 Press ```Ctrl+3``` while playing a video file. The file will be moved to the subfolder (*.\Subfolder1\video.mkv*). If no other items exist in the playlist then mpv auto closes by default.
 
