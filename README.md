@@ -123,7 +123,10 @@ osd-bar-h=1
 osd-bar-align-x=0
 osd-bar-align-y=1
 osd-border-size=2
+osd-font-size=35
+osd-scale-by-window=no
 title= [${playlist-pos-1}/${playlist-count}] [${duration}] [${file-size}]   ${filename}
+osd-status-msg=${time-pos} / ${duration}   PL ${playlist-pos-1}/${playlist-count}
 ```
 #### Usage
 This script uses regions of the screen instead of "buttons" to activate specfic commands. See the screenshot on where each specific region is located. The osc itself is completley hidden other than a minimal seekbar located on the bottom edge of the screen. 
