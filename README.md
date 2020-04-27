@@ -8,6 +8,7 @@
 * [cut-video](#%EF%B8%8F---cut-videolua)
 * [load-dir](#%EF%B8%8F---load-dirlua)
 * [load-dir-auto](#%EF%B8%8F---load-dir-autolua)
+* [clean-playlist](#%EF%B8%8F---clean-playlistolua)
 ##  ▶️  &nbsp; delete-file.lua
 Deletes the currently playing video file.
 #### Installation
@@ -86,3 +87,13 @@ Automatically adds all video files from the current directory to the active play
 1. Copy [load-dir-auto.lua](load-dir-auto.lua) to your mpv scripts directory.
 #### Usage
 No action is required; Loading happens automatically after playback begins. 
+## ▶️  &nbsp; clean-playlist.lua
+Removes all entries from the current playlist that are not a video file.
+#### Installation
+1. Copy [clean-playlist.lua](clean-playlist.lua) to your mpv scripts directory.
+2. Add the following command to **input.conf**
+```
+Alt+c script_message clean-playlist
+```
+#### Usage
+Activating this command will remove all entires from the current playlist that are not a video file. This is useful when dragging a folder onto mpv and it loads unwanted file types.
