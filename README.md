@@ -100,7 +100,7 @@ Alt+c script_message clean-playlist
 #### Usage
 Activating this command will remove all entires from the current playlist that are not video files. This is useful when the playlist has unwanted file types (images, music, etc).
 ## ▶️  &nbsp; custom-osc.lua
-A clean minimal OSC (on screen controller) desgined to use the entire window. 
+A clean minimal OSC (on screen controller) desgined to use the entire window. See image below for functionality.
 
 Image depicting where on screen to click the mouse
 ![](screenshots/osc_image4.png)
@@ -110,6 +110,7 @@ Image depicting where on screen to click the mouse
 ```
 MBTN_LEFT       script_message custom-osc-left-click
 MBTN_LEFT_DBL   script_message custom-osc-left-double-click
+MBTN_RIGHT      ignore
 MOUSE_MOVE      script_message custom-osc-mouse-move
 WHEEL_UP        osd-msg add volume 10
 WHEEL_DOWN      osd-msg add volume -10
