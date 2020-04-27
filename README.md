@@ -68,3 +68,14 @@ Ctrl+ENTER script_message cut-finish
 ```
 #### Usage
 ```Ctrl+LEFT``` to set the start position, ```Ctrl+RIGHT``` to set the end position, and press ```Ctrl+ENTER``` to begin cutting that section of video to a new file. The new file is placed in the same directory as the original file.
+## ▶️  &nbsp; load-dir.lua
+Scans the current directory for video files and adds them to the active playlist if they don't already exist.
+#### Installation
+1. Copy [load-dir.lua](load-dir.lua) to your mpv scripts directory.
+3. Add the following command to **input.conf**
+```
+Alt+Enter script_message load-dir
+```
+#### Usage
+Activating this command will retreive all video files from the directory of the currently playing video file and add them to the active playlist. It will then skip to the next playlist item.
+
