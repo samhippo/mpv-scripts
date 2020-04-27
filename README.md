@@ -103,7 +103,7 @@ Activating this command will remove all entires from the current playlist that a
 A clean minimal OSC (on screen controller) desgined to use the entire window. 
 
 Image depicting where on screen to click the mouse
-![](screenshots/osc_image3.png)
+![](screenshots/osc_image4.png)
 #### Installation
 1. Copy [custom-osc.lua](custom-osc.lua) to your mpv scripts directory.
 2. Add the following commands to **input.conf**
