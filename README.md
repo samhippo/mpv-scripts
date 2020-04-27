@@ -141,6 +141,6 @@ Any one of the following locations will work for installing **scripts**.
 * \<install directory\>\scripts\anyscript.lua
 * \<install directory\>\portable_config\scripts\anyscript.lua
   
-Any one of the following locations will work for installing **config** files (input.conf, mpv.conf).
+Any one of the following locations will work for installing **config files** (input.conf, mpv.conf).
 * \<install directory\>\input.config
 * \<install directory\>\portable_config\input.config
