@@ -8,7 +8,7 @@
 * [cut-video](#%EF%B8%8F---cut-videolua)
 * [load-dir](#%EF%B8%8F---load-dirlua)
 * [load-dir-auto](#%EF%B8%8F---load-dir-autolua)
-* [clean-playlist](#%EF%B8%8F---clean-playlistolua)
+* [clean-playlist](#%EF%B8%8F---clean-playlistlua)
 ##  ▶️  &nbsp; delete-file.lua
 Deletes the currently playing video file.
 #### Installation
