@@ -96,3 +96,17 @@ Alt+c script_message clean-playlist
 ```
 #### Usage
 Activating this command will remove all entires from the current playlist that are not video files. This is useful when the playlist has unwanted file types (images, music, etc).
+## ▶️  &nbsp; custom-osc.lua
+-----
+#### Installation
+1. Copy [custom-osc.lua](custom-osc.lua) to your mpv scripts directory.
+2. Add or replace the following commands to **input.conf**
+```
+MBTN_LEFT       script_message custom-osc-left-click
+MBTN_LEFT_DBL   script_message custom-osc-left-double-click
+MOUSE_MOVE      script_message custom-osc-mouse-move
+WHEEL_UP        osd-msg add volume 10
+WHEEL_DOWN      osd-msg add volume -10
+```
+#### Usage
+---
