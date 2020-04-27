@@ -6,6 +6,8 @@
 * [move-file-datetime](#%EF%B8%8F---move-file-datetimelua)
 * [move-file-subfolder](#%EF%B8%8F---move-file-subfolderlua)
 * [cut-video](#%EF%B8%8F---cut-videolua)
+* [load-dir](#%EF%B8%8F---load-dirlua)
+* [load-dir-auto](#%EF%B8%8F---load-dir-autolua)
 ##  ▶️  &nbsp; delete-file.lua
 Deletes the currently playing video file.
 #### Installation
@@ -69,13 +71,18 @@ Ctrl+ENTER script_message cut-finish
 #### Usage
 ```Ctrl+LEFT``` to set the start position, ```Ctrl+RIGHT``` to set the end position, and press ```Ctrl+ENTER``` to begin cutting that section of video to a new file. The new file is placed in the same directory as the original file.
 ## ▶️  &nbsp; load-dir.lua
-Scans the current directory for video files and adds them to the active playlist if they don't already exist.
+Adds all video files from the current directory to the active playlist.
 #### Installation
 1. Copy [load-dir.lua](load-dir.lua) to your mpv scripts directory.
-3. Add the following command to **input.conf**
+2. Add the following command to **input.conf**
 ```
 Alt+Enter script_message load-dir
 ```
 #### Usage
-Activating this command will retreive all video files from the directory of the currently playing video file and add them to the active playlist. It will then skip to the next playlist item.
-
+Activating this command will retreive all video files from the directory of the currently playing video file and add them to the active playlist. It then skips to the next playlist item.
+## ▶️  &nbsp; load-dir-auto.lua
+Automatically adds all video files from the current directory to the active playlist.
+#### Installation
+1. Copy [load-dir-auto.lua](load-dir-auto.lua) to your mpv scripts directory.
+#### Usage
+No action is required; Loading happens automatically after playback begins. 
