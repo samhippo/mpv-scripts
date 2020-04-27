@@ -41,7 +41,7 @@ Moves the currently playing video file to a timestamped subfolder.
 Ctrl+2 script_message move-file-datetime
 ```
 #### Usage
-Activating this command will move the currently playing video file a timestamped subfolder (e.g. *.\20200425203645\video.mkv*). The timestamp remains until mpv is closed. The playlist entry is also removed for this video file.
+Activating this command will move the currently playing video file a timestamped subfolder (e.g. *.\20200425203645\video.mkv*). The timestamp remains until mpv is closed. The playlist entry is also removed for the video file.
 
 ## ▶️  &nbsp; move-file-subfolder.lua
 Moves the currently playing video file to a specified subfolder.
@@ -53,7 +53,7 @@ Ctrl+3 script_message move-file-subfolder "Subfolder1"
 ```
 3. Edit ```"Subfolder1"``` as needed (no slashes).
 #### Usage
-Activating this command will move the currently playing video file to the specified subfolder (e.g *.\Subfolder1\video.mkv*). The playlist entry is also removed for this video file.
+Activating this command will move the currently playing video file to the specified subfolder (e.g *.\Subfolder1\video.mkv*). The playlist entry is also removed for the video file.
 
 ## ▶️  &nbsp; cut-video.lua
 Uses ffmpeg to cut sections of the currently playing video. The file format remains the same; no encoding is done to the video.
