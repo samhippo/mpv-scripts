@@ -10,6 +10,8 @@
 * [load-dir-auto](#%EF%B8%8F---load-dir-autolua)
 * [clean-playlist](#%EF%B8%8F---clean-playlistlua)
 * [custom-osc](#%EF%B8%8F---custom-osclua)
+* [Notes](#Notes)
+* [Installing Files](#Installing-Files)
 ##  ▶️  &nbsp; delete-file.lua
 Deletes the currently playing video file.
 #### Installation
@@ -136,7 +138,7 @@ Things to note:
 * The video "information" has been moved to the windows titlebar to free up screen space.
 ## Notes
 * Scripts have only been tested on Windows 10
-## Installing files
+## Installing Files
 Any one of the following locations will work for installing **scripts**.
 * \<install directory\>\scripts\anyscript.lua
 * \<install directory\>\portable_config\scripts\anyscript.lua
