@@ -88,7 +88,7 @@ Automatically adds all video files from the current directory to the active play
 #### Usage
 No action is required; Loading happens automatically after playback begins. 
 ## ▶️  &nbsp; clean-playlist.lua
-Removes all entries from the current playlist that are not a video file.
+Removes all entries from the current playlist that are not video files.
 #### Installation
 1. Copy [clean-playlist.lua](clean-playlist.lua) to your mpv scripts directory.
 2. Add the following command to **input.conf**
@@ -96,4 +96,4 @@ Removes all entries from the current playlist that are not a video file.
 Alt+c script_message clean-playlist
 ```
 #### Usage
-Activating this command will remove all entires from the current playlist that are not a video file. This is useful when dragging a folder onto mpv and it loads unwanted file types.
+Activating this command will remove all entires from the current playlist that are not video files. This is useful when dragging a folder onto mpv and it loads unwanted file types.
