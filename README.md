@@ -86,7 +86,7 @@ Automatically adds all video files from the current directory to the active play
 #### Installation
 1. Copy [load-dir-auto.lua](load-dir-auto.lua) to your mpv scripts directory.
 #### Usage
-No action is required; Loading happens automatically after playback begins. 
+No action required; loading happens automatically after playback begins. 
 ## ▶️  &nbsp; clean-playlist.lua
 Removes all entries from the current playlist that are not video files.
 #### Installation
