@@ -77,7 +77,7 @@ Adds all video files from the current directory to the active playlist.
 Alt+Enter script_message load-dir
 ```
 #### Usage
-Activating this command will retreive all video files from the directory of the currently playing video file and add them to the active playlist. It then skips to the next playlist item.
+Activating this command will retreive all video files from the directory of the currently playing video file and add them to the active playlist.
 
 ## ▶️  &nbsp; load-dir-auto.lua
 Automatically adds all video files from the current directory to the active playlist.
