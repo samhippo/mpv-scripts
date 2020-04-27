@@ -25,7 +25,6 @@ function mouseEvent(event)
          if(event == "leftClick") then
             mp.commandv('cycle','pause')
          elseif(event == "leftDoubleClick") then
-            mp.msg.log('fatal',"trying to fullscreen")
             mp.commandv('cycle','fullscreen')
          end
 	end
