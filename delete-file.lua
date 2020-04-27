@@ -1,6 +1,5 @@
 local utils = require "mp.utils"
 function main()
-	mp.commandv('pause')
 	local fileToDelete = string.gsub(mp.get_property("path"), "/", "\\")
 	local args = {'cmd.exe', '/C', 'del', fileToDelete}
 	utils.subprocess({args = args, playback_only = false})
