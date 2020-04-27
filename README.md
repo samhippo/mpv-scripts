@@ -95,4 +95,4 @@ Removes all entries from the current playlist that are not video files.
 Alt+c script_message clean-playlist
 ```
 #### Usage
-Activating this command will remove all entires from the current playlist that are not video files. This is useful when dragging a folder onto mpv and it loads unwanted file types.
+Activating this command will remove all entires from the current playlist that are not video files. This is useful when the playlist has unwanted file types (images, music, etc).
