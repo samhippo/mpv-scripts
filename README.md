@@ -1,15 +1,15 @@
 
 # mpv-scripts
 ## Table of Contents
-* [delete-file](#%EF%B8%8F---delete-filelua)
-* [move-file](#%EF%B8%8F---move-filelua)
-* [move-file-datetime](#%EF%B8%8F---move-file-datetimelua)
-* [move-file-subfolder](#%EF%B8%8F---move-file-subfolderlua)
-* [cut-video](#%EF%B8%8F---cut-videolua)
-* [load-dir](#%EF%B8%8F---load-dirlua)
-* [load-dir-auto](#%EF%B8%8F---load-dir-autolua)
-* [clean-playlist](#%EF%B8%8F---clean-playlistlua)
-* [custom-osc](#%EF%B8%8F---custom-osclua)
+* [\[script\] delete-file](#%EF%B8%8F---delete-filelua)
+* [\[script\] move-file](#%EF%B8%8F---move-filelua)
+* [\[script\] move-file-datetime](#%EF%B8%8F---move-file-datetimelua)
+* [\[script\] move-file-subfolder](#%EF%B8%8F---move-file-subfolderlua)
+* [\[script\] cut-video](#%EF%B8%8F---cut-videolua)
+* [\[script\] load-dir](#%EF%B8%8F---load-dirlua)
+* [\[script\] load-dir-auto](#%EF%B8%8F---load-dir-autolua)
+* [\[script\] clean-playlist](#%EF%B8%8F---clean-playlistlua)
+* [\[script\] custom-osc](#%EF%B8%8F---custom-osclua)
 * [Notes](#Notes)
 * [Installing Files](#Installing-Files)
 ##  ▶️  &nbsp; delete-file.lua
