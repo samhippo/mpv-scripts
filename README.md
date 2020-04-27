@@ -100,13 +100,25 @@ Activating this command will remove all entires from the current playlist that a
 ![](screenshots/osc_image3.png)
 #### Installation
 1. Copy [custom-osc.lua](custom-osc.lua) to your mpv scripts directory.
-2. Add or replace the following commands to **input.conf**
+2. Add the following commands to **input.conf**
 ```
 MBTN_LEFT       script_message custom-osc-left-click
 MBTN_LEFT_DBL   script_message custom-osc-left-double-click
 MOUSE_MOVE      script_message custom-osc-mouse-move
 WHEEL_UP        osd-msg add volume 10
 WHEEL_DOWN      osd-msg add volume -10
+```
+3. Add the following commands to **mpv.conf**
+```
+osc=no
+no-window-dragging
+osd-margin-x=10
+osd-margin-y=10
+osd-bar-w=100
+osd-bar-h=1
+osd-bar-align-x=0
+osd-bar-align-y=1
+osd-border-size=2
 ```
 #### Usage
 ---
