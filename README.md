@@ -28,7 +28,7 @@ Moves the currently playing video file to a specified folder.
 ```
 Ctrl+1 script_message move-file "C:\\Folder1"
 ```
-3. Edit ```"C:\\Folder1"``` as needed.
+3. Edit ```"C:\\Folder1"``` as needed (double slashes are required).
 #### Usage
 Activating this command will move the currently playing video file to the specified folder (if the folder doesn't exist then it will be created). It will also remove the file from the playlist. 
 
