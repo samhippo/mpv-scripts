@@ -137,10 +137,10 @@ Things to note:
 ## Notes
 * Scripts have only been tested on Windows 10
 ## Installing files
-Any of the following locations will work for installing **scripts** but ensure only one is used at a time.
+Any one of the following locations will work for installing **scripts**.
 * \<install directory\>\scripts\anyscript.lua
 * \<install directory\>\portable_config\scripts\anyscript.lua
   
-Any of the following locations will work for installing **config** files (input.conf, mpv.conf) but ensure only one is used at a time.
+Any one of the following locations will work for installing **config** files (input.conf, mpv.conf).
 * \<install directory\>\input.config
 * \<install directory\>\portable_config\input.config
