@@ -48,7 +48,6 @@ local function main()
             mp.commandv('loadfile',filename,'append')
         end
     end
-    mp.commandv('playlist-next')
 end
 
 mp.register_script_message("load-dir", main)
