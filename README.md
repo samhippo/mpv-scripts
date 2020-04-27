@@ -129,8 +129,18 @@ title= [${playlist-pos-1}/${playlist-count}] [${duration}] [${file-size}]   ${fi
 osd-status-msg=${time-pos} / ${duration}   PL ${playlist-pos-1}/${playlist-count}
 ```
 #### Usage
-This script uses regions of the screen instead of "buttons" to activate specfic commands. See the screenshot on where each specific region is located. The osc itself is completley hidden other than a minimal seekbar located on the bottom edge of the screen. 
+This script uses regions of the screen instead of buttons to activate specfic commands. See the screenshot on where each specific region is located. The osc itself is completley hidden other than a minimal seekbar located on the bottom edge of the screen. 
 Things to note:
 * This script uses the default osd progress bar just customized to use less space.
 * The reason ```WHEEL_UP``` and ```WHEEL_DOWN``` are required is because by default the progress bar pops up which is unwanted behavior.
 * The video "information" has been moved to the windows titlebar to free up screen space.
+## Notes
+* Scripts have only been tested on Windows 10
+## Installing files
+Any of the following locations will work for installing **scripts** but ensure only one is used at a time.
+* \<install directory\>\scripts\anyscript.lua
+* \<install directory\>\portable_config\scripts\anyscript.lua
+  
+Any of the following locations will work for installing **config** files (input.conf, mpv.conf) but ensure only one is used at a time.
+* \<install directory\>\input.config
+* \<install directory\>\portable_config\input.config
