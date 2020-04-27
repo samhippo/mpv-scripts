@@ -9,6 +9,7 @@
 * [load-dir](#%EF%B8%8F---load-dirlua)
 * [load-dir-auto](#%EF%B8%8F---load-dir-autolua)
 * [clean-playlist](#%EF%B8%8F---clean-playlistlua)
+* [custom-osc](#%EF%B8%8F---custom-osclua)
 ##  ▶️  &nbsp; delete-file.lua
 Deletes the currently playing video file.
 #### Installation
@@ -125,4 +126,8 @@ osd-border-size=2
 title= [${playlist-pos-1}/${playlist-count}] [${duration}] [${file-size}]   ${filename}
 ```
 #### Usage
----
+This script uses regions of the screen instead of "buttons" to activate specfic commands. See the screenshot on where each specific region is located. The osc itself is completley hidden other than a minimal seekbar located on the bottom edge of the screen. 
+Things to note:
+* This script uses the default osd progress bar just customized to use less space.
+* The reason ```WHEEL_UP``` and ```WHEEL_DOWN``` are required is because by default the progress bar pops up which is unwanted behavior.
+* The video "information" has been moved to the windows titlebar to free up screen space.
