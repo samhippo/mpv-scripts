@@ -42,6 +42,5 @@ end
 
 mp.register_script_message("custom-osc-left-click", leftClick)
 mp.register_script_message("custom-osc-left-double-click", leftDoubleClick)
-mp.register_script_message("custom-osc-right-click", rightClick)
 mp.register_script_message("custom-osc-mouse-move", mouseMove)
 
