@@ -10,8 +10,8 @@
 * [load-dir-auto](#%EF%B8%8F---load-dir-autolua)
 * [clean-playlist](#%EF%B8%8F---clean-playlistlua)
 * [custom-osc](#%EF%B8%8F---custom-osclua)
-* [Notes](#Notes)
-* [Installing Files](#Installing-Files)
+* Notes
+* Installing-Files
 ##  ▶️  &nbsp; delete-file.lua
 Deletes the currently playing video file.
 #### Installation
