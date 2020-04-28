@@ -3,8 +3,8 @@
 ## Scripts
 * [custom-osc](#%EF%B8%8F---custom-osclua)
 * [simple context menu](#%EF%B8%8F---simple-context-menu)
-* [delete-file](#%EF%B8%8F---delete-filelua)
 * [web search](#%EF%B8%8F---web-search)
+* [delete-file](#%EF%B8%8F---delete-filelua)
 * [move-file](#%EF%B8%8F---move-filelua)
 * [move-file-datetime](#%EF%B8%8F---move-file-datetimelua)
 * [move-file-subfolder](#%EF%B8%8F---move-file-subfolderlua)
@@ -67,17 +67,6 @@ Simple context menu created with AHK (AutoHotKey). No modification to mpv is nec
 #### Usage
 This ahk script invokes a contextmenu when the right mouse button is clicked on an mpv window. It then sends hotkeys to mpv based on the menu selection. Any command defined in **input.conf** can be added to the contextmenu. If more complex menus are required then it's possible to use [json-ipc](https://mpv.io/manual/master/#json-ipc) as an alternative.
 
-##  ▶️  &nbsp; delete-file.lua
-Deletes the currently playing video file.
-#### Installation
-1. Copy [delete-file.lua](delete-file.lua) to your mpv scripts directory.
-2. Add the following line to **input.conf**
-```
-Ctrl+DEL script_message delete-file
-```
-#### Usage
-Activating this command will delete the currently playing video file and also remove it from the playlist.
-
 ## ▶️  &nbsp; Web Search
 Search any website for the currently playing file. No script is necessary for this functionality.
 #### Example 1
@@ -92,6 +81,17 @@ F2 run "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-url" "https://anidb.n
 ```
 #### Usage
 Uses the firefox [command line](https://developer.mozilla.org/en-US/docs/Mozilla/Command_Line_Options) to open a website and search for the currently playing filename without extension.
+
+##  ▶️  &nbsp; delete-file.lua
+Deletes the currently playing video file.
+#### Installation
+1. Copy [delete-file.lua](delete-file.lua) to your mpv scripts directory.
+2. Add the following line to **input.conf**
+```
+Ctrl+DEL script_message delete-file
+```
+#### Usage
+Activating this command will delete the currently playing video file and also remove it from the playlist.
 
 ## ▶️  &nbsp; move-file.lua
 Moves the currently playing video file to a specified folder.
