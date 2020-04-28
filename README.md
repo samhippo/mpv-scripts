@@ -49,7 +49,7 @@ osd-border-size=2
 osd-font-size=35
 osd-scale-by-window=no
 title= [${playlist-pos-1}/${playlist-count}] [${duration}] [${file-size}]   ${filename}
-osd-status-msg=${time-pos} / ${duration}   PL ${playlist-pos-1}/${playlist-count}
+osd-status-msg=${time-pos} / ${duration} \nPL ${playlist-pos-1}/${playlist-count}
 ```
 
 ##  ▶️  &nbsp; delete-file.lua
