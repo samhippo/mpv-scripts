@@ -59,7 +59,7 @@ Simple context menu created with AHK (AutoHotKey). No modification to mpv is nec
 #### Installation
 1. AutoHotKey is required for this functionality. Download and install from here [AHK](https://www.autohotkey.com)
 2. Download the script [mpv-contextmenu.ahk](mpv-contextmenu.ahk) to any directory and open with AHK.
-3. Modify mpv-contextmenu.ahk as needed to add context menu items.
+3. Modify the script as needed to add contextmenu items.
 
 #### Usage
 This ahk script invokes a contextmenu when the right mouse button is clicked on an mpv window. It then sends hotkeys to mpv based on the menu selection. Any command defined in **input.conf** can be added to the contextmenu. If more complex menus are required then it's possible to use [json-ipc](https://mpv.io/manual/master/#json-ipc) as an alternative.
