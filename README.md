@@ -1,6 +1,6 @@
 
 # mpv-scripts
-## Table of Contents
+## Scripts
 * [custom-osc](#%EF%B8%8F---custom-osclua)
 * [delete-file](#%EF%B8%8F---delete-filelua)
 * [move-file](#%EF%B8%8F---move-filelua)
@@ -10,6 +10,7 @@
 * [load-dir](#%EF%B8%8F---load-dirlua)
 * [load-dir-auto](#%EF%B8%8F---load-dir-autolua)
 * [clean-playlist](#%EF%B8%8F---clean-playlistlua)
+## Misc
 * Notes
 * Installing-Files
 ## ▶️  &nbsp; custom-osc.lua
