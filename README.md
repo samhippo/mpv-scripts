@@ -13,7 +13,7 @@
 * Notes
 * Installing-Files
 ## ▶️  &nbsp; custom-osc.lua
-A clean minimal OSC (on screen controller) desgined to use the entire window.
+A minimal on screen controller desgined to use the entire window.
 
 Basic Functionality
 * Left Click Sides = Next/Prev
