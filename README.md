@@ -100,9 +100,15 @@ Alt+c script_message clean-playlist
 #### Usage
 Activating this command will remove all entires from the current playlist that are not video files. This is useful when the playlist has unwanted file types (images, music, etc).
 ## ▶️  &nbsp; custom-osc.lua
-A clean minimal OSC (on screen controller) desgined to use the entire window. See image below for functionality.
+A clean minimal OSC (on screen controller) desgined to use the entire window.
 
-Image depicting where on screen to click the mouse
+Basic Functionality
+* Left click sides = Next/Prev
+* Left click center = Play/Pause 
+* Double click center = Toggle Fullscreen
+* Left click bottom = Seekbar
+* Right click anywhere = Drag-Seek
+
 ![](screenshots/osc_image4.png)
 #### Installation
 1. Copy [custom-osc.lua](custom-osc.lua) to your mpv scripts directory.
@@ -133,7 +139,8 @@ osd-status-msg=${time-pos} / ${duration}   PL ${playlist-pos-1}/${playlist-count
 ```
 #### Usage
 This script uses regions of the screen instead of buttons to activate specfic commands. See the screenshot on where each specific region is located. The osc itself is completley hidden other than a minimal seekbar located on the bottom edge of the screen. 
-Things to note:
+
+#### Misc
 * This script uses the default osd progress bar just customized to use less space.
 * The reason ```WHEEL_UP``` and ```WHEEL_DOWN``` are required is because by default the progress bar pops up which is unwanted behavior.
 * The video "information" has been moved to the windows titlebar to free up screen space.
