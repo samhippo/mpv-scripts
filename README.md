@@ -53,7 +53,7 @@ title= [${playlist-pos-1}/${playlist-count}] [${duration}] [${file-size}]   ${fi
 osd-status-msg=${time-pos} / ${duration} \nPL ${playlist-pos-1}/${playlist-count}
 ```
 ##  ▶️  &nbsp; Simple Context Menu
-An simple context menu created with AHK (AutoHotKey). No modification to mpv is necessary for this contextmenu.
+Simple context menu created with AHK (AutoHotKey). No modification to mpv is necessary for this contextmenu.
 
 ![](screenshots/cm_image1.png)
 #### Installation
