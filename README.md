@@ -14,6 +14,7 @@
 ## Other
 * [Notes](#Notes)
 * [Installing Files](#Installing-Files)
+
 ## ▶️  &nbsp; custom-osc.lua
 A minimal on screen controller desgined to use the entire window.
 
@@ -52,6 +53,7 @@ osd-scale-by-window=no
 title= [${playlist-pos-1}/${playlist-count}] [${duration}] [${file-size}]   ${filename}
 osd-status-msg=${time-pos} / ${duration} \nPL ${playlist-pos-1}/${playlist-count}
 ```
+
 ##  ▶️  &nbsp; Simple Context Menu
 Simple context menu created with AHK (AutoHotKey). No modification to mpv is necessary for this contextmenu.
 
@@ -122,6 +124,7 @@ Ctrl+ENTER script_message cut-finish
 ```
 #### Usage
 ```Ctrl+LEFT``` to set the start position, ```Ctrl+RIGHT``` to set the end position, and press ```Ctrl+ENTER``` to begin cutting that section of video to a new file. The new file is placed in the same directory as the original file.
+
 ## ▶️  &nbsp; load-dir.lua
 Adds all video files from the current directory to the active playlist.
 #### Installation
