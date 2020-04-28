@@ -60,7 +60,7 @@ Simple context menu created with AHK (AutoHotKey). No modification to mpv is nec
 ![](screenshots/cm_image1.png)
 #### Installation
 1. AutoHotKey is required for this functionality. Download and install from here [AHK](https://www.autohotkey.com)
-2. Download the script [mpv-contextmenu.ahk](mpv-contextmenu.ahk) to any directory and open with AHK.
+2. Download the script [mpv-contextmenu.ahk](mpv-contextmenu.ahk) to any location and open with AHK.
 3. Modify the script as needed to add contextmenu items.
 
 #### Usage
