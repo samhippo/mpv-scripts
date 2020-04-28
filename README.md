@@ -117,7 +117,7 @@ Adds all video files from the current directory to the active playlist.
 1. Copy [load-dir.lua](load-dir.lua) to your mpv scripts directory.
 2. Add the following command to **input.conf**
 ```
-Alt+Enter script_message load-dir
+Alt+l script_message load-dir
 ```
 #### Usage
 Activating this command will retreive all video files from the directory of the currently playing video file and add them to the active playlist.
