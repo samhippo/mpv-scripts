@@ -1,6 +1,7 @@
 
 # mpv-scripts
 ## Table of Contents
+* [custom-osc](#%EF%B8%8F---custom-osclua)
 * [delete-file](#%EF%B8%8F---delete-filelua)
 * [move-file](#%EF%B8%8F---move-filelua)
 * [move-file-datetime](#%EF%B8%8F---move-file-datetimelua)
@@ -9,9 +10,63 @@
 * [load-dir](#%EF%B8%8F---load-dirlua)
 * [load-dir-auto](#%EF%B8%8F---load-dir-autolua)
 * [clean-playlist](#%EF%B8%8F---clean-playlistlua)
-* [custom-osc](#%EF%B8%8F---custom-osclua)
 * Notes
 * Installing-Files
+## ▶️  &nbsp; custom-osc.lua
+A clean minimal OSC (on screen controller) desgined to use the entire window.
+
+Basic Functionality
+* Left Click Sides = Next/Prev
+* Left Click Center = Play/Pause 
+* Double Left Click center = Toggle Fullscreen
+* Left Click Bottom = Seekbar
+* Right Click Anywhere = Drag-Seek
+
+![](screenshots/osc_image4.png)
+#### Installation
+1. Copy [custom-osc.lua](custom-osc.lua) to your mpv scripts directory.
+2. Add the following commands to **input.conf**
+```
+MBTN_LEFT       script_message custom-osc-left-click
+MBTN_LEFT_DBL   script_message custom-osc-left-double-click
+MBTN_RIGHT      ignore
+MOUSE_MOVE      script_message custom-osc-mouse-move
+WHEEL_UP        osd-msg add volume 10
+WHEEL_DOWN      osd-msg add volume -10
+```
+3. Add the following commands to **mpv.conf**
+```
+osc=no
+no-window-dragging
+osd-margin-x=10
+osd-margin-y=10
+osd-bar-w=100
+osd-bar-h=1
+osd-bar-align-x=0
+osd-bar-align-y=1
+osd-border-size=2
+osd-font-size=35
+osd-scale-by-window=no
+title= [${playlist-pos-1}/${playlist-count}] [${duration}] [${file-size}]   ${filename}
+osd-status-msg=${time-pos} / ${duration}   PL ${playlist-pos-1}/${playlist-count}
+```
+#### Usage
+This script uses regions of the screen instead of buttons to activate specfic commands. See the screenshot on where each specific region is located. The osc itself is completley hidden other than a minimal seekbar located on the bottom edge of the screen. 
+
+#### Misc
+* This script uses the default osd progress bar just customized to use less space.
+* The reason ```WHEEL_UP``` and ```WHEEL_DOWN``` are required is because by default the progress bar pops up which is unwanted behavior.
+* The video "information" has been moved to the windows titlebar to free up screen space.
+## Notes
+* Scripts have only been tested on Windows 10
+## Installing Files
+Any one of the following locations will work for installing **scripts**.
+* \<install directory\>\scripts\anyscript.lua
+* \<install directory\>\portable_config\scripts\anyscript.lua
+  
+Any one of the following locations will work for installing **config files** (input.conf, mpv.conf).
+* \<install directory\>\input.config
+* \<install directory\>\portable_config\input.config
 ##  ▶️  &nbsp; delete-file.lua
 Deletes the currently playing video file.
 #### Installation
@@ -99,58 +154,4 @@ Alt+c script_message clean-playlist
 ```
 #### Usage
 Activating this command will remove all entires from the current playlist that are not video files. This is useful when the playlist has unwanted file types (images, music, etc).
-## ▶️  &nbsp; custom-osc.lua
-A clean minimal OSC (on screen controller) desgined to use the entire window.
 
-Basic Functionality
-* Left Click Sides = Next/Prev
-* Left Click Center = Play/Pause 
-* Double Left Click center = Toggle Fullscreen
-* Left Click Bottom = Seekbar
-* Right Click Anywhere = Drag-Seek
-
-![](screenshots/osc_image4.png)
-#### Installation
-1. Copy [custom-osc.lua](custom-osc.lua) to your mpv scripts directory.
-2. Add the following commands to **input.conf**
-```
-MBTN_LEFT       script_message custom-osc-left-click
-MBTN_LEFT_DBL   script_message custom-osc-left-double-click
-MBTN_RIGHT      ignore
-MOUSE_MOVE      script_message custom-osc-mouse-move
-WHEEL_UP        osd-msg add volume 10
-WHEEL_DOWN      osd-msg add volume -10
-```
-3. Add the following commands to **mpv.conf**
-```
-osc=no
-no-window-dragging
-osd-margin-x=10
-osd-margin-y=10
-osd-bar-w=100
-osd-bar-h=1
-osd-bar-align-x=0
-osd-bar-align-y=1
-osd-border-size=2
-osd-font-size=35
-osd-scale-by-window=no
-title= [${playlist-pos-1}/${playlist-count}] [${duration}] [${file-size}]   ${filename}
-osd-status-msg=${time-pos} / ${duration}   PL ${playlist-pos-1}/${playlist-count}
-```
-#### Usage
-This script uses regions of the screen instead of buttons to activate specfic commands. See the screenshot on where each specific region is located. The osc itself is completley hidden other than a minimal seekbar located on the bottom edge of the screen. 
-
-#### Misc
-* This script uses the default osd progress bar just customized to use less space.
-* The reason ```WHEEL_UP``` and ```WHEEL_DOWN``` are required is because by default the progress bar pops up which is unwanted behavior.
-* The video "information" has been moved to the windows titlebar to free up screen space.
-## Notes
-* Scripts have only been tested on Windows 10
-## Installing Files
-Any one of the following locations will work for installing **scripts**.
-* \<install directory\>\scripts\anyscript.lua
-* \<install directory\>\portable_config\scripts\anyscript.lua
-  
-Any one of the following locations will work for installing **config files** (input.conf, mpv.conf).
-* \<install directory\>\input.config
-* \<install directory\>\portable_config\input.config
