@@ -52,11 +52,16 @@ function mouseMove()
 		mp.commandv('osd-msg-bar','show-progress')
     end
     
-    if(dragging == true) then
+   if(dragging == true) then
         local x, y = mp.get_mouse_pos()
-        local diff = (prevX - x) * .5;
-        mp.commandv('osd-msg-bar','seek',diff)
-        prevX = x
+        local diff = (prevX - x);
+        if(diff > 2) then
+           mp.commandv('osd-msg-bar','seek',.5)
+            prevX = x 
+        elseif (diff < -2) then
+            mp.commandv('osd-msg-bar','seek',-.5)
+            prevX = x 
+        end
     end
 end
 
