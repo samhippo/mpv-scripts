@@ -11,8 +11,8 @@
 * [load-dir-auto](#%EF%B8%8F---load-dir-autolua)
 * [clean-playlist](#%EF%B8%8F---clean-playlistlua)
 ## Other
-* Notes
-* Installing-Files
+* [Notes](#Notes)
+* [Installing Files](#Installing-Files)
 ## ▶️  &nbsp; custom-osc.lua
 A minimal on screen controller desgined to use the entire window.
 
