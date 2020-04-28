@@ -3,8 +3,8 @@
 ## Scripts
 * [custom-osc](#%EF%B8%8F---custom-osclua)
 * [simple context menu](#%EF%B8%8F---simple-context-menu)
-* [web search](#%EF%B8%8F---web-search)
 * [delete-file](#%EF%B8%8F---delete-filelua)
+* [web search](#%EF%B8%8F---web-search)
 * [move-file](#%EF%B8%8F---move-filelua)
 * [move-file-datetime](#%EF%B8%8F---move-file-datetimelua)
 * [move-file-subfolder](#%EF%B8%8F---move-file-subfolderlua)
@@ -66,6 +66,7 @@ Simple context menu created with AHK (AutoHotKey). No modification to mpv is nec
 
 #### Usage
 This ahk script invokes a contextmenu when the right mouse button is clicked on an mpv window. It then sends hotkeys to mpv based on the menu selection. Any command defined in **input.conf** can be added to the contextmenu. If more complex menus are required then it's possible to use [json-ipc](https://mpv.io/manual/master/#json-ipc) as an alternative.
+
 ##  ▶️  &nbsp; delete-file.lua
 Deletes the currently playing video file.
 #### Installation
