@@ -3,6 +3,7 @@
 ## Scripts
 * [custom-osc](#%EF%B8%8F---custom-osclua)
 * [simple context menu](#%EF%B8%8F---simple-context-menu)
+* [web search](#%EF%B8%8F---web-search)
 * [delete-file](#%EF%B8%8F---delete-filelua)
 * [move-file](#%EF%B8%8F---move-filelua)
 * [move-file-datetime](#%EF%B8%8F---move-file-datetimelua)
@@ -75,6 +76,21 @@ Ctrl+DEL script_message delete-file
 ```
 #### Usage
 Activating this command will delete the currently playing video file and also remove it from the playlist.
+
+## ▶️  &nbsp; Web Search
+Search any website for the currently playing file. No script is necessary for this functionality.
+#### Example 1
+Add the following line to **input.conf**. Uses the default search engine in firefox.
+```
+F1 run "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-search" "${filename/no-ext}"
+```
+#### Example 2
+Add the following line to **input.conf**. Searches https://anidb.net/ website .
+```
+F2 run "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-url" "https://anidb.net/search/anime/?adb.search=${filename/no-ext}&do.search=1"
+```
+#### Usage
+Uses the firefox commandline to open a website and search for the currently playing filename without extension.
 
 ## ▶️  &nbsp; move-file.lua
 Moves the currently playing video file to a specified folder.
