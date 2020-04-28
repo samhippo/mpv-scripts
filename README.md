@@ -105,7 +105,7 @@ A clean minimal OSC (on screen controller) desgined to use the entire window.
 Basic Functionality
 * Left click sides = Next/Prev
 * Left click center = Play/Pause 
-* Double click center = Toggle Fullscreen
+* Double Left click center = Toggle Fullscreen
 * Left click bottom = Seekbar
 * Right click anywhere = Drag-Seek
 
