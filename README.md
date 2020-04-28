@@ -10,7 +10,7 @@
 * [load-dir](#%EF%B8%8F---load-dirlua)
 * [load-dir-auto](#%EF%B8%8F---load-dir-autolua)
 * [clean-playlist](#%EF%B8%8F---clean-playlistlua)
-## Misc
+## Other
 * Notes
 * Installing-Files
 ## ▶️  &nbsp; custom-osc.lua
