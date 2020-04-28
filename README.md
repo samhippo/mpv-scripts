@@ -91,7 +91,7 @@ Add the following line to **input.conf**. Searches https://anidb.net/ website .
 F2 run "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-url" "https://anidb.net/search/anime/?adb.search=${filename/no-ext}&do.search=1"
 ```
 #### Usage
-Uses the firefox commandline to open a website and search for the currently playing filename without extension.
+Uses the firefox [command line](https://developer.mozilla.org/en-US/docs/Mozilla/Command_Line_Options) to open a website and search for the currently playing filename without extension.
 
 ## ▶️  &nbsp; move-file.lua
 Moves the currently playing video file to a specified folder.
