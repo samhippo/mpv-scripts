@@ -2,7 +2,7 @@
 # mpv-scripts
 ## Scripts
 * [custom-osc](#%EF%B8%8F---custom-osclua)
-
+* [simple context menu](#%EF%B8%8F---simple-context-menu)
 * [delete-file](#%EF%B8%8F---delete-filelua)
 * [move-file](#%EF%B8%8F---move-filelua)
 * [move-file-datetime](#%EF%B8%8F---move-file-datetimelua)
