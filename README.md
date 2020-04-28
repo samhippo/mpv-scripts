@@ -53,7 +53,7 @@ title= [${playlist-pos-1}/${playlist-count}] [${duration}] [${file-size}]   ${fi
 osd-status-msg=${time-pos} / ${duration} \nPL ${playlist-pos-1}/${playlist-count}
 ```
 ##  ▶️  &nbsp; Simple Context Menu
-An example context menu created with AHK (AutoHotKey). No modification to mpv is necessary.
+An simple context menu created with AHK (AutoHotKey). No modification to mpv is necessary for this contextmenu.
 
 ![](screenshots/cm_image1.png)
 #### Installation
@@ -62,7 +62,7 @@ An example context menu created with AHK (AutoHotKey). No modification to mpv is
 3. Modify mpv-contextmenu.ahk as needed to add context menu items.
 
 #### Usage
-This ahk script invokes a simple contextmenu when the right mouse button is clicked on an mpv window. It then sends hotkeys to mpv based on the menu selection. Any command defined in **input.conf** can be added to the contextmenu. If more complex menus are required then it's possible to use [json-ipc](https://mpv.io/manual/master/#json-ipc) as an alternative.
+This ahk script invokes a contextmenu when the right mouse button is clicked on an mpv window. It then sends hotkeys to mpv based on the menu selection. Any command defined in **input.conf** can be added to the contextmenu. If more complex menus are required then it's possible to use [json-ipc](https://mpv.io/manual/master/#json-ipc) as an alternative.
 ##  ▶️  &nbsp; delete-file.lua
 Deletes the currently playing video file.
 #### Installation
