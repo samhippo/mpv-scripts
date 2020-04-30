@@ -28,7 +28,6 @@ function fn_cut_finish(p1,p2)
     local output_path = utils.join_path(output_directory, output_filename)
     local args = {'ffmpeg', '-ss', tostring(start_time_seconds), "-i",tostring(mp.get_property("path")),"-to",tostring(end_time_seconds-start_time_seconds)}
     for token in string.gmatch(video_args, "[^%s]+") do
-      mp.msg.fatal(token)
       table.insert(args,token)
     end
     table.insert(args,output_path)
@@ -45,23 +44,20 @@ function fn_cut_left()
   start_time_seconds = mp.get_property_number("time-pos")
   start_time_formated = mp.command_native({"expand-text","${time-pos}"})
   mp.msg.info("START TIME: "..start_time_seconds)
-  local screenText = "{\\an4}{\\b1}{\\fs14}{\\1c&H00FFFF&}".."Start Time: "..start_time_formated
-  if(end_time_formated ~= nil) then
-    screenText = "{\\an4}{\\b1}{\\fs14}{\\1c&H00FFFF&}".."End Time: "..end_time_formated.."\n"..screenText
-  end
-  ov.data = screenText
-  ov:update()
+  showOnScreen()
 end
 
 function fn_cut_right()
   end_time_seconds = mp.get_property_number("time-pos")
   end_time_formated = mp.command_native({"expand-text","${time-pos}"})
   mp.msg.info("END TIME: "..end_time_seconds)
-  local screenText = "{\\an4}{\\b1}{\\fs14}{\\1c&H00FFFF&}".."End Time: "..end_time_formated
-  if(start_time_formated ~= nil) then
-    screenText = screenText.."\n{\\an4}{\\b1}{\\fs14}{\\1c&H00FFFF&}".."Start Time: "..start_time_formated
-  end
-  ov.data = screenText
+ showOnScreen()
+end
+
+function showOnScreen()
+  local st = (start_time_formated == nil and '' or start_time_formated)
+  local et = (end_time_formated == nil and '' or end_time_formated)
+  ov.data = "{\\an4}{\\b1}{\\fs14}{\\1c&H00FFFF&}".."End Time: "..et.."\n{\\an4}{\\b1}{\\fs14}{\\1c&H00FFFF&}".."Start Time: "..st
   ov:update()
 end
 
