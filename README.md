@@ -142,7 +142,7 @@ Ctrl+ENTER script_message cut-finish
 #Ctrl+ENTER script_message cut-finish "webm" "-filter:v crop=200:200:0:0 -q:a 0 -q:v 4"
 ```
 #### Usage
-```Ctrl+LEFT``` to set the start position, ```Ctrl+RIGHT``` to set the end position, and ```Ctrl+ENTER``` to begin cutting that section of video to a new file. Optional paramters: A)File Extension B)FFmpeg settings. The output file is placed in the same directory as the original file.
+```Ctrl+LEFT``` to set the start position, ```Ctrl+RIGHT``` to set the end position, and ```Ctrl+ENTER``` to begin cutting that section of video to a new file. Optional paramters: A.) File Extension B.) FFmpeg settings. The output file is placed in the same directory as the original file.
 
 #### Example 1
 ```Ctrl+ENTER script_message cut-finish```
