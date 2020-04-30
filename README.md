@@ -147,7 +147,7 @@ Ctrl+ENTER script_message cut-finish
 #### Example 1
 ```Ctrl+ENTER script_message cut-finish```
 
-Default (no Paramters). The video is cut and copied in the source format. No encoding.
+Default (no parameters). The video is cut and copied in the source format. No encoding.
 
 #### Example 2
 ```Ctrl+ENTER script_message cut-finish "avi"```
