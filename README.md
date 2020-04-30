@@ -129,7 +129,7 @@ Ctrl+3 script_message move-file-subfolder "Subfolder1"
 Activating this command will move the currently playing video file to the specified subfolder e.g ```.\Subfolder1\video.mkv```. The playlist entry is also removed for the video file.
 
 ## ▶️  &nbsp; cut-video.lua
-Uses ffmpeg to cut sections of the currently playing video. The file format remains the same; no encoding is done to the video.
+Uses ffmpeg to cut sections of the currently playing video.
 #### Installation
 1. Copy [cut-video.lua](cut-video.lua) to your mpv scripts directory.
 2. [ffmpeg](https://www.ffmpeg.org/download.html) must either be added to your mpv installation folder or added to your Windows Environment Variables (Path) so that it can be located by the script.
