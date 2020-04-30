@@ -138,9 +138,26 @@ Uses ffmpeg to cut sections of the currently playing video. The file format rema
 Ctrl+LEFT script_message cut-left
 Ctrl+RIGHT script_message cut-right
 Ctrl+ENTER script_message cut-finish
+#Ctrl+ENTER script_message cut-finish "avi"
+#Ctrl+ENTER script_message cut-finish "webm" "-filter:v crop=200:200:0:0 -q:a 0 -q:v 4"
 ```
 #### Usage
-```Ctrl+LEFT``` to set the start position, ```Ctrl+RIGHT``` to set the end position, and press ```Ctrl+ENTER``` to begin cutting that section of video to a new file. The new file is placed in the same directory as the original file.
+```Ctrl+LEFT``` to set the start position, ```Ctrl+RIGHT``` to set the end position, and ```Ctrl+ENTER``` to begin cutting that section of video to a new file. Optional paramters: A)File Extension B)FFmpeg settings. The output file is placed in the same directory as the original file.
+
+#### Example 1
+```Ctrl+ENTER script_message cut-finish```
+
+Default (no Paramters). The video is cut and copied in the source format. No encoding.
+
+#### Example 2
+```Ctrl+ENTER script_message cut-finish "avi"```
+
+Output format specified. The video will be encoded with default settings in the file type specified
+
+#### Example 3
+```Ctrl+ENTER script_message cut-finish "webm" "-filter:v crop=200:200:0:0 -q:a 0 -q:v 4"```
+
+Output format (webm) with encoding settings (crop and video quality).
 
 ## ▶️  &nbsp; load-dir.lua
 Adds all video files from the current directory to the active playlist.
