@@ -1,22 +1,22 @@
 
 # mpv-scripts
 ## Scripts
-* [custom-osc](#%EF%B8%8F---custom-osclua)
-* [simple context menu](#%EF%B8%8F---simple-context-menu)
-* [web search](#%EF%B8%8F---web-search)
-* [delete-file](#%EF%B8%8F---delete-filelua)
-* [move-file](#%EF%B8%8F---move-filelua)
-* [move-file-datetime](#%EF%B8%8F---move-file-datetimelua)
-* [move-file-subfolder](#%EF%B8%8F---move-file-subfolderlua)
-* [cut-video](#%EF%B8%8F---cut-videolua)
-* [load-dir](#%EF%B8%8F---load-dirlua)
-* [load-dir-auto](#%EF%B8%8F---load-dir-autolua)
-* [clean-playlist](#%EF%B8%8F---clean-playlistlua)
+* [custom-osc](#custom-osclua)
+* [simple context menu](#simple-context-menu)
+* [web search](#web-search)
+* [delete-file](#delete-filelua)
+* [move-file](#move-filelua)
+* [move-file-datetime](#move-file-datetimelua)
+* [move-file-subfolder](#move-file-subfolderlua)
+* [cut-video](#cut-videolua)
+* [load-dir](#load-dirlua)
+* [load-dir-auto](#load-dir-autolua)
+* [clean-playlist](#clean-playlistlua)
 ## Other
 * [Notes](#Notes)
 * [Installing Files](#Installing-Files)
 
-## ▶️  &nbsp; custom-osc.lua
+## custom-osc.lua
 A minimal on screen controller desgined to use the entire window.
 
 Basic Functionality
@@ -55,7 +55,7 @@ title= [${playlist-pos-1}/${playlist-count}] [${duration}] [${file-size}]   ${fi
 osd-status-msg=${time-pos} / ${duration} \nPL ${playlist-pos-1}/${playlist-count}
 ```
 
-##  ▶️  &nbsp; Simple Context Menu
+## Simple Context Menu
 Simple context menu created with AHK (AutoHotKey). No modification to mpv is necessary for this contextmenu.
 
 ![](screenshots/cm_image1.png)
@@ -67,7 +67,7 @@ Simple context menu created with AHK (AutoHotKey). No modification to mpv is nec
 #### Usage
 This ahk script invokes a contextmenu when the right mouse button is clicked on an mpv window. It then sends hotkeys to mpv based on the menu selection. Any command defined in **input.conf** can be added to the contextmenu. If more complex menus are required then it's possible to use [json-ipc](https://mpv.io/manual/master/#json-ipc) as an alternative.
 
-## ▶️  &nbsp; Web Search
+## Web Search
 Search any website for the currently playing file. No script is necessary for this functionality.
 #### Example 1
 Add the following line to **input.conf**. Uses the default search engine in firefox.
@@ -82,7 +82,7 @@ F2 run "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-url" "https://anidb.n
 #### Usage
 Uses the firefox [command line](https://developer.mozilla.org/en-US/docs/Mozilla/Command_Line_Options) to open a website and search for the currently playing filename without extension.
 
-##  ▶️  &nbsp; delete-file.lua
+## delete-file.lua
 Deletes the currently playing video file.
 #### Installation
 1. Copy [delete-file.lua](delete-file.lua) to your mpv scripts directory.
@@ -93,7 +93,7 @@ Ctrl+DEL script_message delete-file
 #### Usage
 Activating this command will delete the currently playing video file and also remove it from the playlist.
 
-## ▶️  &nbsp; move-file.lua
+## move-file.lua
 Moves the currently playing video file to a specified folder.
 #### Installation
 1. Copy [move-file.lua](move-file.lua) to your mpv scripts directory.
@@ -105,7 +105,7 @@ Ctrl+1 script_message move-file "C:\\Folder1"
 #### Usage
 Activating this command will move the currently playing video file to the specified folder (if the folder doesn't exist then it will be created). It will also remove the file from the playlist. 
 
-## ▶️  &nbsp; move-file-datetime.lua
+## move-file-datetime.lua
 Moves the currently playing video file to a timestamped subfolder.
 #### Installation
 1. Copy [move-file-datetime.lua](move-file-datetime.lua) to your mpv scripts directory.
@@ -116,7 +116,7 @@ Ctrl+2 script_message move-file-datetime
 #### Usage
 Activating this command will move the currently playing video file a timestamped subfolder e.g. ```.\20200425203645\video.mkv```. The timestamp remains until mpv is closed. The playlist entry is also removed for the video file.
 
-## ▶️  &nbsp; move-file-subfolder.lua
+## move-file-subfolder.lua
 Moves the currently playing video file to a specified subfolder.
 #### Installation
 1. Copy [move-file-subfolder.lua](move-file-subfolder.lua) to your mpv scripts directory.
@@ -128,7 +128,7 @@ Ctrl+3 script_message move-file-subfolder "Subfolder1"
 #### Usage
 Activating this command will move the currently playing video file to the specified subfolder e.g ```.\Subfolder1\video.mkv```. The playlist entry is also removed for the video file.
 
-## ▶️  &nbsp; cut-video.lua
+## cut-video.lua
 Uses ffmpeg to cut sections of the currently playing video.
 #### Installation
 1. Copy [cut-video.lua](cut-video.lua) to your mpv scripts directory.
@@ -159,7 +159,7 @@ Output format specified. The video will be encoded with default settings in the 
 
 Output format (webm) with encoding settings (crop and video quality).
 
-## ▶️  &nbsp; load-dir.lua
+## load-dir.lua
 Adds all video files from the current directory to the active playlist.
 #### Installation
 1. Copy [load-dir.lua](load-dir.lua) to your mpv scripts directory.
@@ -170,14 +170,14 @@ Alt+l script_message load-dir
 #### Usage
 Activating this command will retreive all video files from the directory of the currently playing video file and add them to the active playlist.
 
-## ▶️  &nbsp; load-dir-auto.lua
+## load-dir-auto.lua
 Automatically adds all video files from the current directory to the active playlist.
 #### Installation
 1. Copy [load-dir-auto.lua](load-dir-auto.lua) to your mpv scripts directory.
 #### Usage
 No action required; loading happens automatically after playback begins. 
 
-## ▶️  &nbsp; clean-playlist.lua
+## clean-playlist.lua
 Removes all entries from the current playlist that are not video files.
 #### Installation
 1. Copy [clean-playlist.lua](clean-playlist.lua) to your mpv scripts directory.
