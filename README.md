@@ -171,7 +171,7 @@ Alt+l script_message load-dir
 Activating this command will retreive all video files from the directory of the currently playing video file and add them to the active playlist.
 
 # load-dir-auto.lua
-Automatically adds all video files from the current directory to the active playlist.
+Automatically adds all video files (audio and images files are ignored) from the current directory to the active playlist.
 #### Installation
 1. Copy [load-dir-auto.lua](load-dir-auto.lua) to your mpv scripts directory.
 #### Usage
