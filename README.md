@@ -9,7 +9,7 @@
 * [move-file-datetime](#move-file-datetimelua)
 * [move-file-subfolder](#move-file-subfolderlua)
 * [cut-video](#cut-videolua)
-* [load-dir](#load-dirlua)
+* [next-file](#next-filelua)
 * [load-dir-auto](#load-dir-autolua)
 * [clean-playlist](#clean-playlistlua)
 ## Other
@@ -159,19 +159,17 @@ Output format specified. The video will be encoded with default settings in the 
 
 Output format (webm) with encoding settings (crop and video quality).
 
-# load-dir.lua
-Adds all video files from the current directory to the active playlist.
+# next-file.lua
+Loads the next video file from the current directory. No playlist is used. The file types can be edited in the script as necessary.
 #### Installation
-1. Copy [load-dir.lua](load-dir.lua) to your mpv scripts directory.
+1. Copy [next-file.lua](next-file.lua) to your mpv scripts directory.
 2. Add the following command to **input.conf**
 ```
-Alt+l script_message load-dir
+Alt+e script_message next-file
 ```
-#### Usage
-Activating this command will retreive all video files from the directory of the currently playing video file and add them to the active playlist.
 
 # load-dir-auto.lua
-Automatically adds all video files (audio and images files are ignored) from the current directory to the active playlist.
+Automatically adds files from the current directory to the playlist. The file types can be edited in the script as necessary.
 #### Installation
 1. Copy [load-dir-auto.lua](load-dir-auto.lua) to your mpv scripts directory.
 #### Usage
