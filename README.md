@@ -157,7 +157,7 @@ Output format specified. The video will be encoded with default settings in the 
 #### Example 3
 ```Ctrl+ENTER script_message cut-finish "webm" "-filter:v crop=200:200:0:0 -q:a 0 -q:v 4"```
 
-Output format (webm) with encoding settings (crop and video quality).
+Output format (e.g. webm) with optional ffmpeg settings.
 
 # next-file.lua
 Loads the next video file from the current directory. No playlist is used. The file types can be edited in the script as necessary.
