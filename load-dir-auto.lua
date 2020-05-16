@@ -26,6 +26,7 @@ end
 local function main()
     local dir, f = utils.split_path(mp.get_property("path"))
     local ar = utils.readdir(dir,"files")
+    if(ar == nil) then return end
     for i, name in ipairs(ar) do
         local ext = string.match(name, "%.([^.]+)$")
         if(ext == nil) then ext = '' end
