@@ -11,6 +11,7 @@
 * [cut-video](#cut-videolua)
 * [next-file](#next-filelua)
 * [load-dir-auto](#load-dir-autolua)
+* [playlist-sort](#playlist-sortlua)
 * [clean-playlist](#clean-playlistlua)
 ## Other
 * [Notes](#Notes)
