@@ -177,7 +177,7 @@ Automatically adds files from the current directory to the playlist. The file ty
 No action required; loading happens automatically after playback begins. 
 
 # playlist-sort.lua
-Sorts the current playlist by filename, date modified, or size. After sort is complete it begins playing from the beginning.
+Sorts the current playlist by filename, date modified, or size. After sort is complete it begins playing from the top.
 #### Installation
 1. Copy [playlist-sort.lua](playlist-sort.lua) to your mpv scripts directory.
 2. Add the following command to **input.conf**
