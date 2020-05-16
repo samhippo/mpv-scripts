@@ -180,14 +180,14 @@ No action required; loading happens automatically after playback begins.
 Sorts the current playlist by filename, date modified, or size. After sort is complete it begins playing from the top.
 #### Installation
 1. Copy [playlist-sort.lua](playlist-sort.lua) to your mpv scripts directory.
-2. Add the following command to **input.conf**
+2. Add the following commands to **input.conf**
 ```
 1 script_message playlist-sort name asc  
 2 script_message playlist-sort name desc
 3 script_message playlist-sort date asc
 4 script_message playlist-sort date desc
 5 script_message playlist-sort size asc
-5 script_message playlist-sort size desc
+6 script_message playlist-sort size desc
 ```
 
 # clean-playlist.lua
