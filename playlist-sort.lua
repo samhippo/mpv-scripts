@@ -61,4 +61,4 @@ local function main(type,asc)
     end
 end
 
-mp.register_script_message("sort-playlist", main)
+mp.register_script_message("playlist-sort", main)
