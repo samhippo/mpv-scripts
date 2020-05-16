@@ -175,6 +175,20 @@ Automatically adds files from the current directory to the playlist. The file ty
 #### Usage
 No action required; loading happens automatically after playback begins. 
 
+# playlist-sort.lua
+Sorts the current playlist by filename, date modified, or size. After sort is complete it begins playing from the beginning.
+#### Installation
+1. Copy [playlist-sort.lua](playlist-sort.lua) to your mpv scripts directory.
+2. Add the following command to **input.conf**
+```
+1 script_message playlist-sort name asc  
+2 script_message playlist-sort name desc
+3 script_message playlist-sort date asc
+4 script_message playlist-sort date desc
+5 script_message playlist-sort size asc
+5 script_message playlist-sort size desc
+```
+
 # clean-playlist.lua
 Removes all entries from the current playlist that are not video files.
 #### Installation
@@ -185,6 +199,8 @@ Alt+c script_message clean-playlist
 ```
 #### Usage
 Activating this command will remove all entires from the current playlist that are not video files. This is useful when the playlist has unwanted file types (images, music, etc).
+
+
 
 ## Notes
 * Scripts have only been tested on Windows 10
