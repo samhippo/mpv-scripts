@@ -43,6 +43,9 @@ end
 
 local function main(type,asc)
     local dt = nil
+    if(type == nil) then type = "name" end
+    if(asc == nil) then asc = "asc" end
+
     if(type == "date") then 
         dt = getDate()
     elseif(type == "size") then 
@@ -59,6 +62,7 @@ local function main(type,asc)
             mp.commandv('loadfile',n.filename,'append')
         end
     end
+    mp.osd_message("Playlist Sort: "..type.." "..asc)
 end
 
 mp.register_script_message("playlist-sort", main)
