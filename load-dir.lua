@@ -26,6 +26,7 @@ local function main()
 
     local dir, f = utils.split_path(mp.get_property("path"))
     local ar = utils.readdir(dir,"files")
+    local c = 0
     if(ar == nil) then return end
     for i, name in ipairs(ar) do
         local ext = string.match(name, "%.([^.]+)$")
@@ -34,8 +35,10 @@ local function main()
         local filename = utils.join_path(dir, name)
         if(valid[ext] and isNew(filename)) then
             mp.commandv('loadfile',filename,'append')
+            c = c + 1
         end
     end
+    mp.osd_message('Added '..c..' files')
 end
 
 mp.register_script_message("load-dir", main)
