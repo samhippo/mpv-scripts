@@ -180,7 +180,7 @@ Alt+r script_message load-dir
 ```
 
 # load-dir-auto.lua
-Automatically adds files from the current directory to the playlist. The file types can be edited in the script as necessary.
+Automatically adds files from the current directory (not recursive) to the playlist. Files are sorted by filename in ascending order. File types can be edited in the script. Script only runs once per mpv instance.
 #### Installation
 1. Copy [load-dir-auto.lua](load-dir-auto.lua) to your mpv scripts directory.
 #### Usage
