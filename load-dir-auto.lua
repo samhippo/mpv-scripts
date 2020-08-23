@@ -23,39 +23,39 @@ end
 
 local function main()
 
-    first_run = false --this script only runs once
+    if(first_run) then
+        first_run = false --this script only runs once
 
-    if(mp.get_property_native("playlist/count") ~= 1) then
-        return --if a playlist already exists then exit script
-    end
+        if(mp.get_property_native("playlist/count") ~= 1) then
+            return --if a playlist already exists then exit script
+        end
 
-    local sorted_index = -1
-    local file_playing = mp.get_property("path")
-    local dir, f = utils.split_path(mp.get_property("path"))
-    local ar = utils.readdir(dir,"files")
-    local dt = {}
-    if(ar == nil) then return end
-    for i, name in ipairs(ar) do
-        local ext = string.match(name, "%.([^.]+)$")
-        if(ext == nil) then ext = '' end
-        ext = string.lower(ext)
-        local ext_filename = utils.join_path(dir, name)
-        if(valid[ext]) then
-            table.insert(dt, {filename = ext_filename, data = ext_filename:lower()})
+        local sorted_index = -1
+        local file_playing = mp.get_property("path")
+        local dir, f = utils.split_path(mp.get_property("path"))
+        local ar = utils.readdir(dir,"files")
+        local dt = {}
+        if(ar == nil) then return end
+        for i, name in ipairs(ar) do
+            local ext = string.match(name, "%.([^.]+)$")
+            if(ext == nil) then ext = '' end
+            ext = string.lower(ext)
+            local ext_filename = utils.join_path(dir, name)
+            if(valid[ext]) then
+                table.insert(dt, {filename = ext_filename, data = ext_filename:lower()})
+            end
         end
-    end
-    mp.msg.info('auto-load-dir '..#dt..' files')
-    sort(dt,"asc") -- simple alpha sort ascending order
-    for i,n in ipairs(dt) do 
-        if(n.filename ~= file_playing) then
-            mp.commandv('loadfile',n.filename,'append')
-        else
-            sorted_index = i
+        mp.msg.info('auto-load-dir '..#dt..' files')
+        sort(dt,"asc") -- simple alpha sort ascending order
+        for i,n in ipairs(dt) do 
+            if(n.filename ~= file_playing) then
+                mp.commandv('loadfile',n.filename,'append')
+            else
+                sorted_index = i
+            end
         end
-    end
-    mp.commandv('playlist-move',mp.get_property_native("playlist-current-pos"),sorted_index)
+        mp.commandv('playlist-move',mp.get_property_native("playlist-current-pos"),sorted_index)
+   end
 end
 
-if(first_run) then
     mp.register_event("file-loaded",main)
-end
