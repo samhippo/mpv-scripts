@@ -58,4 +58,4 @@ local function main()
    end
 end
 
-    mp.register_event("file-loaded",main)
+mp.register_event("file-loaded",main)
