@@ -120,15 +120,18 @@ Activating this command will move the currently playing video file to the specif
 Uses ffmpeg to copy sections of the currently playing video. The original video is untouched.
 #### Installation
 1. Copy [cut-video.lua](cut-video.lua) to your mpv scripts directory.
-2. [ffmpeg](https://www.ffmpeg.org/download.html) must either be copied to your mpv installation folder or added to your Windows Environment Variables (Path) so that it can be located by the script.
+2. [ffmpeg.exe](https://www.ffmpeg.org/download.html) must either be copied to your mpv install folder or added to your Windows Environment Variables (Path) so that it can be located by the script.
 3. Add the following text to **input.conf**
 ```
+#required
 Ctrl+Left script_message cut-left
 Ctrl+Right script_message cut-right
 Ctrl+Up script_message cut-start
 Ctrl+Down script_message cut-end
 Ctrl+ENTER script_message cut-finish
-#Ctrl+ENTER script_message cut-finish "avi"
+
+#optional
+#Ctrl+ENTER script_message cut-finish "avi" 
 #Ctrl+ENTER script_message cut-finish "webm" "-filter:v crop=200:200:0:0 -q:a 0 -q:v 4"
 ```
 #### Usage
