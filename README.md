@@ -143,7 +143,7 @@ Ctrl+ENTER script_message cut-finish
 
 ```Ctrl+DOWN``` sets the right position to end of file 
 
-```Ctrl+ENTER``` Begins cutting that section of video to a new file. 
+```Ctrl+ENTER``` begins cutting that section of video to a new file. 
 
 You can also set an optional file extension if you wish to convert the video to a different format.
 
