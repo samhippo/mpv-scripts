@@ -136,10 +136,15 @@ Ctrl+ENTER script_message cut-finish
 ```
 #### Usage
 ```Ctrl+LEFT``` sets the left position
+
 ```Ctrl+RIGHT``` sets the right position
+
 ```Ctrl+UP``` sets the left position to 00:00:00
+
 ```Ctrl+DOWN``` sets the right position to end of file 
+
 ```Ctrl+ENTER``` Begins cutting that section of video to a new file. 
+
 You can also set an optional file extension if you wish to convert the video to a different format.
 
 
