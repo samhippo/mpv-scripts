@@ -9,7 +9,6 @@
 * [move-file-subfolder](#move-file-subfolderlua)
 * [cut-video](#cut-videolua)
 * [next-file](#next-filelua)
-* [load-dir](#load-dirlua)
 * [load-dir-auto](#load-dir-autolua)
 * [playlist-sort](#playlist-sortlua)
 * [clean-playlist](#clean-playlistlua)
@@ -148,15 +147,6 @@ Loads the next video file from the current directory. No playlist is used. The f
 2. Add the following command to **input.conf**
 ```
 Alt+e script_message next-file
-```
-
-# load-dir.lua
-Adds files from the currrent directory to the playlist. If the file already exists then it will be skipped. The file types can be edited in the script as needed.
-#### Installation
-1. Copy [load-dir.lua](load-dir.lua) to your mpv scripts directory.
-2. Add the following command to **input.conf**
-```
-Alt+r script_message load-dir
 ```
 
 # load-dir-auto.lua
