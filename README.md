@@ -2,7 +2,6 @@
 # mpv-scripts
 ## Scripts
 * [custom-osc](#custom-osclua)
-* [simple context menu](#simple-context-menu)
 * [web search](#web-search)
 * [delete-file](#delete-filelua)
 * [move-file](#move-filelua)
@@ -56,18 +55,6 @@ osd-scale-by-window=no
 title= [${playlist-pos-1}/${playlist-count}] [${duration}] [${file-size}]   ${filename}
 osd-status-msg=${time-pos} / ${duration} \nPL ${playlist-pos-1}/${playlist-count}
 ```
-
-# Simple Context Menu
-Simple context menu created with AHK (AutoHotKey). No modification to mpv is necessary for this contextmenu.
-
-![](screenshots/cm_image1.png)
-#### Installation
-1. AutoHotKey is required for this functionality. Download and install from here [AHK](https://www.autohotkey.com)
-2. Download the script [mpv-contextmenu.ahk](mpv-contextmenu.ahk) to any location and open with AHK.
-3. Modify the script as needed to add contextmenu items.
-
-#### Usage
-This ahk script invokes a contextmenu when the right mouse button is clicked on an mpv window. It then sends hotkeys to mpv based on the menu selection. Any command defined in **input.conf** can be added to the contextmenu. If more complex menus are required then it's possible to use [json-ipc](https://mpv.io/manual/master/#json-ipc) as an alternative.
 
 # Web Search
 Search any website for the currently playing file. No script is necessary for this functionality.
@@ -131,35 +118,28 @@ Ctrl+3 script_message move-file-subfolder "Subfolder1"
 Activating this command will move the currently playing video file to the specified subfolder e.g ```.\Subfolder1\video.mkv```. The playlist entry is also removed for the video file.
 
 # cut-video.lua
-Uses ffmpeg to cut sections of the currently playing video.
+Uses ffmpeg to copy sections of the currently playing video. The Original video is untouched.
 #### Installation
 1. Copy [cut-video.lua](cut-video.lua) to your mpv scripts directory.
 2. [ffmpeg](https://www.ffmpeg.org/download.html) must either be copied to your mpv installation folder or added to your Windows Environment Variables (Path) so that it can be located by the script.
 3. Add the following text to **input.conf**
 ```
-Ctrl+LEFT script_message cut-left
-Ctrl+RIGHT script_message cut-right
+Ctrl+Left script_message cut-left
+Ctrl+Right script_message cut-right
+Ctrl+Up script_message cut-start
+Ctrl+Down script_message cut-end
 Ctrl+ENTER script_message cut-finish
 #Ctrl+ENTER script_message cut-finish "avi"
 #Ctrl+ENTER script_message cut-finish "webm" "-filter:v crop=200:200:0:0 -q:a 0 -q:v 4"
 ```
 #### Usage
-```Ctrl+LEFT``` to set the start position, ```Ctrl+RIGHT``` to set the end position, and ```Ctrl+ENTER``` to begin cutting that section of video to a new file. Optional paramters: A.) File Extension B.) FFmpeg settings. The output file is placed in the same directory as the original file.
+```Ctrl+LEFT``` sets the left position
+```Ctrl+RIGHT``` sets the right position
+```Ctrl+UP``` sets the left position to 00:00:00
+```Ctrl+DOWN``` sets the right position to end of file 
+```Ctrl+ENTER``` Begins cutting that section of video to a new file. 
+You can also set an optional file extension if you wish to convert the video to a different format.
 
-#### Example 1
-```Ctrl+ENTER script_message cut-finish```
-
-Default (no parameters). The video is cut and copied in the source format. No encoding.
-
-#### Example 2
-```Ctrl+ENTER script_message cut-finish "avi"```
-
-Output format specified. The video will be encoded with default settings in the file type specified
-
-#### Example 3
-```Ctrl+ENTER script_message cut-finish "webm" "-filter:v crop=200:200:0:0 -q:a 0 -q:v 4"```
-
-Output format (e.g. webm) with optional ffmpeg settings.
 
 # next-file.lua
 Loads the next video file from the current directory. No playlist is used. The file types can be edited in the script as necessary.
