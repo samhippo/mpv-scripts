@@ -2,6 +2,7 @@ local start_time_formated = nil
 local start_time_seconds = nil
 local end_time_seconds = nil
 local end_time_formated = nil
+local is_processing = false
 local utils = require "mp.utils"
 local ov = mp.create_osd_overlay("ass-events")
 
@@ -31,13 +32,46 @@ function fn_cut_finish(p1,p2)
       table.insert(args,token)
     end
     table.insert(args,output_path)
-    utils.subprocess_detached({args = args, playback_only = false})
+    --utils.subprocess_detached({args = args, playback_only = false})
+
+
+  is_processing = true
+  ov.data = "\n{\\an4}{\\b1}{\\fs20}{\\1c&H00FFFF&}".."Processing..."
+  ov:update()
+
+    local r = mp.command_native({
+      name = "subprocess",
+      playback_only = false,
+      capture_stdout = true,
+      detach = false,
+      args = args,
+  })
+
+    print("result: " .. r.stdout)
+
     start_time_formated = nil
     start_time_seconds = nil
     end_time_seconds = nil
     end_time_formated = nil
+    is_processing = false
     ov:remove()
+
   end
+end
+
+
+function fn_cut_start()
+  start_time_seconds = 0
+  start_time_formated = "00:00:00"
+  mp.msg.info("START TIME: "..start_time_seconds)
+  showOnScreen()
+end
+
+function fn_cut_end()
+  end_time_seconds = mp.get_property_number("duration")
+  end_time_formated =  mp.command_native({"expand-text","${duration}"})
+  mp.msg.info("END TIME: "..start_time_seconds)
+  showOnScreen()
 end
 
 function fn_cut_left()
@@ -57,10 +91,12 @@ end
 function showOnScreen()
   local st = (start_time_formated == nil and '' or start_time_formated)
   local et = (end_time_formated == nil and '' or end_time_formated)
-  ov.data = "{\\an4}{\\b1}{\\fs14}{\\1c&H00FFFF&}".."End Time: "..et.."\n{\\an4}{\\b1}{\\fs14}{\\1c&H00FFFF&}".."Start Time: "..st
+  ov.data = "{\\an4}{\\b1}{\\fs20}{\\1c&H00FFFF&}".."Start:  "..st.."\n{\\an4}{\\b1}{\\fs20}{\\1c&H00FFFF&}".."End:  "..et
   ov:update()
 end
 
+mp.register_script_message('cut-start', fn_cut_start)
+mp.register_script_message('cut-end', fn_cut_end)
 mp.register_script_message('cut-left', fn_cut_left)
 mp.register_script_message('cut-right', fn_cut_right)
 mp.register_script_message('cut-finish', fn_cut_finish)
