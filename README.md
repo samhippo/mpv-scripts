@@ -195,13 +195,13 @@ Automatically selects the last english subtitle track that doesn't contain "song
 #### Installation
 1. Copy [sub-priority.lua](sub-priority.lua) to your mpv scripts directory.
 #### Usage
-When a file is loaded this script will scan for subtitle tracks that match the given criteria and activate it. If no matching subtitle exists then the script does nothing and exits.
+When a file is loaded this script will scan for subtitle tracks that match the given criteria and activate it. If no matching subtitle exists then the script does nothing and exits.        
 
 #
 #
 #
 #
----
+
 ## Notes
 * Scripts have only been tested on Windows 10
 ## Installing Files
