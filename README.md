@@ -204,11 +204,3 @@ When a file is loaded this script will scan for subtitle tracks that match the g
 
 ## Notes
 * Scripts have only been tested on Windows 10
-## Installing Files
-Any one of the following locations will work for installing **scripts**.
-* \<install directory\>\scripts\anyscript.lua
-* \<install directory\>\portable_config\scripts\anyscript.lua
-  
-Any one of the following locations will work for installing **config files** (input.conf, mpv.conf).
-* \<install directory\>\input.config
-* \<install directory\>\portable_config\input.config
