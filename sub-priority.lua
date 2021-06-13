@@ -1,5 +1,5 @@
 -- This scripts automatically selects the last english subtitle track that doesn't contain "sign" or "song"
--- If no subtitle exists that matches this criteria then the script does nothing and exists
+-- If no subtitle exists that matches this criteria then the script does nothing and exits
 
 
 function load_sub()
