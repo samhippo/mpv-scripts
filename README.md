@@ -12,6 +12,7 @@
 * [load-dir-auto](#load-dir-autolua)
 * [playlist-sort](#playlist-sortlua)
 * [clean-playlist](#clean-playlistlua)
+* [sub-priority](#sub-prioritylua)
 ## Other
 * [Notes](#Notes)
 * [Installing Files](#Installing-Files)
@@ -189,6 +190,12 @@ Alt+c script_message clean-playlist
 #### Usage
 Activating this command will remove all entires from the current playlist that are not video files. This is useful when the playlist has unwanted file types (images, music, etc).
 
+# sub-priority.lua
+Automatically selects the last english subtitle track that doesn't contain "song" or "sign". The matching criteria can be modified inside the script.
+#### Installation
+1. Copy [sub-priority.lua](sub-priority.lua) to your mpv scripts directory.
+#### Usage
+When a file is loaded this script will scan for subtitle tracks that match the given criteria and activate it. If no matching subtitle exists then the script does nothing and exits.
 
 
 ## Notes
