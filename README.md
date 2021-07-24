@@ -8,6 +8,7 @@
 * [move-file-datetime](#move-file-datetimelua)
 * [move-file-subfolder](#move-file-subfolderlua)
 * [cut-video](#cut-videolua)
+* [clip-live-stream](#clip-live-streamlua)
 * [next-file](#next-filelua)
 * [load-dir-auto](#load-dir-autolua)
 * [playlist-sort](#playlist-sortlua)
@@ -118,7 +119,7 @@ Ctrl+3 script_message move-file-subfolder "Subfolder1"
 Activating this command will move the currently playing video file to the specified subfolder e.g ```.\Subfolder1\video.mkv```. The playlist entry is also removed for the video file.
 
 # cut-video.lua
-Uses ffmpeg to cut sections of the currently playing video. The original video is untouched.
+Uses ffmpeg to clip sections of the currently playing video. The original video is untouched.
 #### Installation
 1. Copy [cut-video.lua](cut-video.lua) to your mpv scripts directory.
 2. [ffmpeg.exe](https://www.ffmpeg.org/download.html) must either be copied to your mpv install folder or added to your Windows Environment Variables (Path) so that it can be located by the script.
@@ -147,6 +148,19 @@ Ctrl+ENTER script_message cut-finish
 ```Ctrl+ENTER``` begins cutting that section of video to a new file. 
 
 You can also set an optional file extension if you wish to convert the video to a different format.
+
+# clip-live-stream.lua
+Clips the last N seconds of a live stream. Takes two paramaters: a folder and number of seconds to clip.
+#### Installation
+1. Copy [clip-live-stream.lua](clip-live-stream.lua) to your mpv scripts directory.
+2. Add the following command to **input.conf**
+```
+Alt+c script-message clip-live-stream "C:\\clips\\" 120
+```
+3. Make sure cache is enable in **mpv.conf**
+```
+cache=yes
+```
 
 
 # next-file.lua
