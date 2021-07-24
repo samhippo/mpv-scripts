@@ -158,7 +158,7 @@ NOTE: It will create two video files because the video type is unknown at the ti
 ```
 Alt+c script-message clip-live-stream "C:\\clips\\" 120
 ```
-3. Make sure cache is enable in **mpv.conf**
+3. Make sure cache is enabled in **mpv.conf**
 ```
 cache=yes
 ```
