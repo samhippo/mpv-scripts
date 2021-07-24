@@ -151,8 +151,8 @@ You can also set an optional file extension if you wish to convert the video to 
 
 # clip-live-stream.lua
 Clips the last N seconds of a live stream. Takes two parameters: a folder and number of seconds to clip.  
+It will output two video clip files `.ts` and `.mkv` because the video type is unknown at the time of clipping.  
 NOTE: It will only clip as far back as is cached. If you need to clip a longer amount of time you can try `demuxer-max-bytes=300M` `demuxer-max-back-bytes=350M`  
-NOTE: It will output two video clip files `.ts` and `.mkv` because the video type is unknown at the time of clipping.  
 #### Installation
 1. Copy [clip-live-stream.lua](clip-live-stream.lua) to your mpv scripts directory.
 2. Add the following command to **input.conf**
