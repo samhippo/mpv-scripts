@@ -13,7 +13,7 @@
 * [load dir auto](#load-dir-autolua)
 * [playlist sort](#playlist-sortlua)
 * [clean playlist](#clean-playlistlua)
-* [sub priority](#sub-prioritylua)
+* [subtitle priority](#sub-prioritylua)
 ## Other
 * [Notes](#Notes)
 * [Installing Files](#Installing-Files)
