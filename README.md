@@ -150,7 +150,8 @@ Ctrl+ENTER script_message cut-finish
 You can also set an optional file extension if you wish to convert the video to a different format.
 
 # clip-live-stream.lua
-Clips the last N seconds of a live stream. Takes two paramaters: a folder and number of seconds to clip.
+Clips the last N seconds of a live stream. Takes two parameters: a folder and number of seconds to clip.
+NOTE: It will create two video files because the video type is unknown at the time of clipping.
 #### Installation
 1. Copy [clip-live-stream.lua](clip-live-stream.lua) to your mpv scripts directory.
 2. Add the following command to **input.conf**
